@@ -13,7 +13,7 @@ var weathericon = document.querySelector(".weather-icon");
 
 async function WeatherAPP(city){
    try{
-    var fmethod = await fetch(apiUrl + city +`&appid=${process.env.kEY}`) ;
+    var fmethod = await fetch(apiUrl + city +`&appid=${process.env.KEY}`) ;
     console.log(fmethod);
     var fData = await fmethod.json() ;
 
