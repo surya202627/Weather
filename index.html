@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-APP</title>
+
+    <!-- Add css file -->
+    <link rel="stylesheet" href="index.css">
+    
+
+</head>
+
+<!-- API Url =     https://api.openweathermap.org/data/2.5/weather?q=chennai&appid=4a370480ac4cb41b90b3d794286a129f&units=metric -->
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" 
+                    placeholder="Enter city name"
+                    spellcheck="false">
+            <button><img src="asserts/search.png" alt=""></button>
+        </div>      
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>        
+        <div class="weather">
+                <img src="asserts/rain.png" class="weather-icon"
+                 alt="">
+                 <h1 class="temp">22°C</h1>
+                 <h2 class="city">America</h2>
+               <div class="details">
+                    <div class="col">
+                        <img src="asserts/humidity.png" alt="">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                          <img src="asserts/wind.png" alt="">
+                        <div>
+                            <p class="wind">50 Km/h</p>
+                            <p>wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+                                   
+
+    <!-- Add javascript file -->
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
