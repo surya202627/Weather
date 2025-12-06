@@ -1,9 +1,9 @@
-import {api_Key} from "./config.js";
 
 /*
 
 <!-- API Url =     https://api.openweathermap.org/data/2.5/weather?q=chennai&appid=4a370480ac4cb41b90b3d794286a129f&units=metric -->
 */
+
 
 var apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
@@ -18,7 +18,7 @@ async function WeatherAPP(city){
     var fData = await fmethod.json() ;
 
     console.log(fData);
-     console.log("hello")
+
 
     if(fmethod.status == 404){
       document.querySelector(".error").style.display = "block";
@@ -54,7 +54,7 @@ async function WeatherAPP(city){
    }
    catch(error){
        console.log(error)
-       console.log("hello")
+
    }
    
 }
