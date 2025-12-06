@@ -1,4 +1,4 @@
-
+import {api_Key} from "./config.js";
 
 /*
 
@@ -13,7 +13,7 @@ var weathericon = document.querySelector(".weather-icon");
 
 async function WeatherAPP(city){
    try{
-    var fmethod = await fetch(apiUrl + city +`&appid=${import.meta.env.KEY}`) ;
+    var fmethod = await fetch(apiUrl + city +`&appid=${api_key}`) ;
     console.log(fmethod);
     var fData = await fmethod.json() ;
 
